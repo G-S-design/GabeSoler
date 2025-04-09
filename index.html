@@ -12,10 +12,13 @@
   <div class="container">
     <header>
       <nav>
-        <div class="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <div class="nav-container">
+          <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#business">Business</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -31,7 +34,7 @@
         <div class="project-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="image-25.webp" alt="Bayesian Interference Research Project" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2//image-25.webp" alt="Bayesian Interference Research Project" />
             </div>
             <h3>Bayesian Interference Research</h3>
             <p>This projects explores how we can integrate bayesian interference in UX optimization, Specifically, this project explores its implementation in hairdyers to minimize hair damage</p>
@@ -59,7 +62,7 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="speaker.png" alt="Bayesian Interference Research Project" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2//speaker.png" alt="Bayesian Interference Research Project" />
             </div>
             <h3>Voyn Audio Nano</h3>
             <p>the first iteration of a bluetooth speaker. It is the first product for Voyn Audio, an audio startup</p>
@@ -87,7 +90,7 @@
 
           <div class="project-card">
             <div class="project-image">
-              <img src="Bikeshare.png" alt="Bayesian Interference Research Project" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2//Bikeshare.png" alt="Bayesian Interference Research Project" />
             </div>
             <h3>FreeFlow Sheridan - UX Optimization</h3>
             <p>This project explores how we can optimize the user experience of a bike share/Bus Stop. This architecture project is made to seamlessly blend into the design language of Sheridan college's Oakville campus</p>
@@ -112,10 +115,8 @@
               <div class="info-content">Skills: Twinmoiton, Sketchup, Photoshop</div>
             </div>
           </div>
-        </div>
-      </section>
+          </section>
 
-      
 
       <section id="skills" class="skills-section">
         <h2>Skills</h2>
@@ -123,43 +124,43 @@
           <!-- CAD/3D Design -->
           <div class="skill-card">
             <div class="business-icon">
-              <img src="solidworks.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/solidworks.png" alt="Fusion Frame Logo" />
             </div>
             <span>SolidWorks</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="fusion360.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/fusion360.png" alt="Fusion Frame Logo" />
             </div>
             <span>Fusion 360</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="autocad.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/autocad.png" alt="Fusion Frame Logo" />
             </div>
             <span>AutoCAD</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="sketchup.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/sketchup.png" alt="Fusion Frame Logo" />
             </div>
             <span>SketchUp</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="blender.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/blender.png" alt="Fusion Frame Logo" />
             </div>
             <span>Blender</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="figma.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/figma.png" alt="Fusion Frame Logo" />
             </div>
             <span>Figma</span>
           </div>
           <div class="skill-card">
             <div class="business-icon">
-              <img src="photoshop.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/photoshop.png" alt="Fusion Frame Logo" />
             </div>
             <span>Photoshop</span>
           </div>
@@ -183,7 +184,7 @@
         <div class="education-card">
           <div class="education-content">
             <div class="business-icon">
-              <img src="queens.png" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/queens.png" alt="Fusion Frame Logo" />
             </div>
             <div class="education-details">
               <h4>BASc - Mathematics & Mechanical Engineering</h4>
@@ -198,12 +199,11 @@
         <div class="business-card">
           <div class="business-content">
             <div class="business-icon">
-              <img src="Logo.svg" alt="Fusion Frame Logo" />
+              <img src="C:\Users\gabri\Desktop\CODE\Website V2/Logo.svg" alt="Fusion Frame Logo" />
             </div>
             <div class="business-details">
               <h4>Graphic Designer & Founder</h4>
               <p>A community-driven brand creating intentional art pieces that reflect values and inspire growth.</p>
-              <a href="#" class="business-link">Learn More</a>
             </div>
           </div>
         </div>
@@ -216,23 +216,21 @@
   </div>
 
   <script>
+    // Info button toggle function
     function toggleInfo(button) {
       const projectInfo = button.closest('.project-info');
       const allContents = projectInfo.querySelectorAll('.info-content');
       const allButtons = projectInfo.querySelectorAll('.info-btn');
       const index = Array.from(projectInfo.querySelectorAll('.info-btn')).indexOf(button);
       
-      // Remove active class from all buttons in this project card
       allButtons.forEach(btn => {
         if (btn !== button) {
           btn.classList.remove('active');
         }
       });
       
-      // Toggle active class on clicked button
       button.classList.toggle('active');
       
-      // Hide all content
       allContents.forEach((content, i) => {
         if (i === index) {
           if (button.classList.contains('active')) {
@@ -245,6 +243,82 @@
         }
       });
     }
+
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Initialize viewport classes
+    const animatedElements = document.querySelectorAll('.project-card, .skill-card, .education-card, .business-card');
+    
+    function initializeViewportClasses() {
+      animatedElements.forEach(element => {
+        if (isInViewport(element)) {
+          element.classList.add('in-viewport');
+          element.classList.add('fade-in');
+        } else {
+          element.classList.remove('in-viewport');
+        }
+      });
+    }
+
+    // Call on page load
+    initializeViewportClasses();
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          
+          // Update active nav link if it's a section
+          if (entry.target.tagName.toLowerCase() === 'section') {
+            const sectionId = entry.target.id;
+            navLinks.forEach(link => {
+              if (link.getAttribute('href').slice(1) === sectionId) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe animated elements
+    animatedElements.forEach(element => observer.observe(element));
+
+    // Smooth scroll with offset for navigation
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        
+        const offset = 80;
+        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 </html>
