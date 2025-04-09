@@ -1,0 +1,12 @@
+{
+  "name": "gabe-portfolio",
+  "version": "1.0.0",
+  "description": "Gabe's Personal Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+} 
