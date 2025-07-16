@@ -234,7 +234,7 @@ section {
 }
 
 .project-image:hover img {
-    transform: scale(1);
+    transform: scale(1.01);
 }
 
 /* Update project card to handle image hover better */
