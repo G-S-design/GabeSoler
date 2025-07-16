@@ -234,10 +234,7 @@ section {
 }
 
 .project-image:hover img {
-    object-fit: cover;
-    width: 120%;
-    height: 120%;
-    transform: scale(1.02);
+    transform: scale(1.2);
 }
 
 /* Update project card to handle image hover better */
