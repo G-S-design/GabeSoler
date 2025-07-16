@@ -234,6 +234,9 @@ section {
 }
 
 .project-image:hover img {
+    object-fit: cover;
+    width: 120%;
+    height: 120%;
     transform: scale(1.02);
 }
 
