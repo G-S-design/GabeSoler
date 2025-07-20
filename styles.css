@@ -120,7 +120,7 @@ section {
 
 /* Gradient Text */
 .gradient-text {
-    background: linear-gradient(135deg, #0066ff 0%, #00ccff 50%, #0066ff 100%);
+    background: linear-gradient(130deg, #f5f5dc 0%, #b8c8a0 50%, #006400 100%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
