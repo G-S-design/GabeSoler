@@ -31,7 +31,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    background: linear-gradient(130deg, #e8f2ff 0%, #d5ffe4 25%, #b3ffc1 50%, #c7ff99 75%, #a6df8b 100%);
+    background: linear-gradient(130deg, #f4fdf7 0%, #def8e6 25%, #c6f0d4 50%, #b0e5c1 75%, #a2d8af 100%);
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -193,6 +193,7 @@ section {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
     border-radius: clamp(0.5rem, 2vw, 1rem);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     padding: clamp(1rem, 3vw, 1.5rem);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
