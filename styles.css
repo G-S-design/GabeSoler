@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ffffff;
+    --primary-color: #fefff7;
     --secondary-color: #faebd7;
-    --text-color: #1a1a1a;
+    --text-color: #1d523b;
     --card-bg: rgba(255, 255, 255, 0.3);
     --card-hover: rgba(255, 255, 255, 0.4);
 }
@@ -31,7 +31,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    background: linear-gradient(130deg, #e8f2ff 0%, #d5e6ff 25%, #b3d1ff 50%, #99c2ff 75%, #80b3ff 100%);
+    background: linear-gradient(130deg, #f5f5dc 0%, #b8c8a0 50%, #006400 100%);
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
